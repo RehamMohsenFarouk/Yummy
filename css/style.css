@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    /* overflow: hidden; */
+    
+}
+
+
+
+.loadingScreen{
+
+    position: fixed;
+    inset: 0;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+.mainContainer {
+    margin: 3rem;
+    padding: 6rem;
+}
+
+.recipy-present {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.layer {
+    position: absolute;
+    background-color: rgb(255, 255, 255, .6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* display: none;  */
+    transform: translateY(100%);
+    transition: .9s;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.recipy-present:hover .layer {
+
+    transform: translateY(0);
+}
+
+.form-control {
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+   
+    box-shadow: 0px 3px 15px -5px white;
+}
+.seachByFirstLetterInput , .seachByNameInput{
+    width: 49%;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+.seachInputs {
+
+    padding: 0 6rem;
+    
+}
+
+.fixedDiv img {
+    width: 80px;
+    height: 53px;
+}
+
+.sideBare {
+
+    width: 270px;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    top: 0;
+
+}
+
+.fixedDiv {
+
+    width: 60px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    bottom: 0;
+   
+    /* left: 0px; */
+
+}
+
+.sliderDiv {
+    width: 205px;
+    height: 100vh;
+    position: relative;
+}
+
+.copy-rights {
+    position: absolute;
+    bottom: 20px;
+}
+
+.sliderDiv a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    margin-top: 100px
+   
+}
+
+a:hover {
+    color: white;
+}
+
+.menuIconDiv{
+width: fit-content;
+margin-left:  1.1rem;
+cursor: pointer;
+}
+
+
+.searchLink , .categoryLink , .ariaLink , .ingredientsLink , .contactUsLink{
+    opacity: .1;
+    
+}
+.aria{
+    cursor: pointer;
+    padding: 2rem;
+    background-color: rgba(19, 17, 17, 0.9);
+ 
+}
+.ingr{
+    cursor: pointer;
+    padding: 1rem;
+    background-color: rgba(19, 17, 17, 0.9);
+    overflow: hidden;
+    height: 200px;
+    
+}
+
+#oneLetterAlert{
+    width: 49%;
+}

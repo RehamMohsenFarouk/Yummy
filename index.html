@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yummy </title>
+  <link rel="icon" type="image/x-icon" href="/images/emoji icon.png">
+
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+  <div class="loadingScreen">
+    <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+  </div>
+
+  <div class="sideBare ">
+    <div class="sliderDiv text-white bg-black p-4 position-relative">
+      <a clickedLink="Search" class="searchLink ">Search</a>
+      <a clickedLink="Category" class="categoryLink">Category</a>
+      <a clickedLink="Aria" class="ariaLink">Aria</a>
+      <a clickedLink="Ingredients" class="ingredientsLink">Ingredients</a>
+      <a clickedLink="ContactUs" class="contactUsLink">Contact Us</a>
+      <div class="copy-rights text-muted ">Copyright Â© 2022 All Rights Reserved.</div>
+    </div>
+
+    <div class="fixedDiv bg-white">
+      <!-- <i class="fa-solid fa-xmark"></i> -->
+      <img src="images/emoji.png" class="w-100">
+      <div class="menuIconDiv  ">
+        <i class="fa-solid fa-bars fa-2xl menuIcon"></i>
+      </div>
+      <i class="fa-solid fa-share-nodes fa-xl"></i>
+    </div>
+  </div>
+
+
+  <!-- seachBy name and first letter -->
+  <div class="seachInputs d-flex justify-content-between container pt-5 d-none ">
+    <input type="text" class="seachByNameInput form-control " placeholder="Search By Name ">
+    <input type="text" class="seachByFirstLetterInput form-control " placeholder="Search By First Letter">
+   
+  </div>
+  <div class="container seachInputs">
+    <div id="oneLetterAlert" class="alert alert-danger d-none ms-auto ">Write one letter only</div>
+  </div>
+
+  
+
+  <!-- contact us -->
+  <div class="contactUs w-50 m-auto text-center mt-5 d-none">
+
+    <div class="fs-1 text-white mb-5">Contact Us</div>
+    <div class="container">
+      <div class="row g-3">
+
+        <div class="col-md-6">
+          <input id="name" type="text" class="form-control " placeholder="Enter Your Name">
+          <div id="nameAlert" class="alert alert-danger d-none ">Special Characters and Numbers not allowed</div>
+        </div>
+
+        <div class="col-md-6">
+          <input id="email" type="email" class="form-control" placeholder="Enter Email">
+          <div id="emailAlert" class="alert alert-danger  d-none">Enter valid email. *Ex: xxx@yyy.zzz</div>
+        </div>
+
+        <div class="col-md-6">
+          <input id="phone" type="text" class="form-control" placeholder="Enter phone">
+          <div id="phoneAlert" class="alert alert-danger d-none ">Enter valid Phone Number</div>
+        </div>
+
+        <div class="col-md-6">
+          <input id="age" type="text" class="form-control" placeholder="Enter Age">
+          <div id="ageAlert" class="alert alert-danger d-none ">Enter valid Age</div>
+        </div>
+
+        <div class="col-md-6">
+          <input id="password" type="password" class="form-control" placeholder="Enter Password">
+          <div id="passwordAlert" class="alert alert-danger d-none ">Enter valid password *Minimum eight characters, at least one letter and one number:*</div>
+        </div>
+
+        <div class="col-md-6">
+          <input id="repassword" type="password" class="form-control" placeholder="Enter Repassword">
+          <div id="repasswordAlert" class="alert alert-danger d-none ">Enter valid Repassword</div>
+        </div>
+
+      </div>
+      <button disabled class="submitBtn btn btn-outline-danger mt-5 ">Submit</button>
+    </div>
+  </div>
+
+
+
+  <div class="mainContainer ">
+
+
+
+    <!-- start page -->
+    <div class="starPage ">
+      <div class="container">
+        <div class="row mt-3 p-2 g-4 recipyContainer">
+
+         
+
+        </div>
+      </div>
+    </div>
+
+    <!-- when click on recepy img -->
+
+    <div class="recepyDetails mb-5  ">
+      <div class="container">
+        <div class="row recepyDetailsRow">
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="searchRecipy ">
+      <div class="container">
+        <div class="row g-4 recipySearchContainer">
+          
+
+          <!-- <div class="col-md-3" clicked>
+            <div class="recipy-present rounded">
+              <img src="images/1.jpg" class="w-100 rounded">
+              <div onclick="getStartRecipyDetailsApi(id)" class="layer rounded">
+                <div class="p-3 fs-3">hello</div>
+              </div>
+            </div>
+          </div> -->
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- category -->
+    <div class="allCategories ">
+      <div class="container">
+        <div class="row g-4 categoryContainer">
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="categoryRecipy ">
+      <div class="container">
+        <div class="row g-4 categoryRecipyContainer">
+
+
+         
+        </div>
+      </div>
+    </div>
+
+    <!-- Aria -->
+    <div class="allAriaes ">
+      <div class="container">
+        <div class="row g-4 AriaContainer">
+
+
+         
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="AriaRecipy ">
+      <div class="container">
+        <div class="row g-4 AriaRecipyContainer">
+
+
+         
+
+
+        </div>
+      </div>
+    </div>
+
+
+<!-- ingredient -->
+
+    <div class="allIngredients ">
+      <div class="container">
+        <div class="row g-4 ingredientContainer">
+
+
+        
+        </div>
+      </div>
+    </div>
+
+
+    <div class="ingredientRecipy ">
+      <div class="container">
+        <div class="row g-4 ingredientRecipyContainer">
+
+
+         
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  
+
+
+
+
+
+
+ 
+
+
+
+
+
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+
+</html>
